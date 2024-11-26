@@ -28,7 +28,7 @@ export const App = () => {
             data-cy="ClearButton"
             type="button"
             className="delete ml-3"
-            onClick={() => setValue(null)}
+            onClick={() => setValue('')}
           />
         )}
       </h1>
@@ -51,7 +51,7 @@ export const App = () => {
                   )}
                   data-cy={good === selectedGood ? 'RemoveButton' : 'AddButton'}
                   type="button"
-                  onClick={() => setValue(good === selectedGood ? null : good)}
+                  onClick={() => setValue(good === selectedGood ? '' : good)}
                 >
                   {good === selectedGood ? '-' : '+'}
                 </button>
